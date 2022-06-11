@@ -1,0 +1,20 @@
+@import "./helps/fonts.sass";
+
+:root {
+    --yellow: #ffeb39d6;
+    --red: #ff0000;
+    --blue: #013048;
+    --white: #fff;
+    --orange: #ff5722;
+}
+
+body{
+    font-weight: 400;
+    font-family: "Montserrat";
+    font-size: 1em;
+}
+
+
+.container{
+    padding: 0px 20px;
+}

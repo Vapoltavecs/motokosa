@@ -1,0 +1,13 @@
+<div class="container">
+    <form action="./send.php" class="form" method="post" id="form">
+        <label for="name" class="input__wrapper">
+            <img src="./images/form/name.png" alt="name" class="input__icon">
+            <input type="text" id="name" name="name" class="form__input" placeholder="Введіть ваше ім'я" required>
+        </label>
+        <label for="phone" class="input__wrapper">
+            <img src="./images/form/phone.png" alt="phone" class="input__icon">
+            <input class="form__input" id="phone" name="phone" type="tel" placeholder="Введіть Ваш телефон" required>
+        </label>
+        @@include("../button/index.html", {title: "Оформити замовлення", type: "submit"})
+    </form>
+</div>

@@ -1,0 +1,86 @@
+.offer
+    &__wrapper
+        margin-top: 30px
+
+    &__title
+        font-size: 2em
+        max-width: 60%
+        margin: 30px 20px
+    &__item
+        position: relative
+        padding: 25px 30px
+        width: 100%
+        background: url("../images/offer/background.jpg")
+        display: flex
+        align-items: center
+        &-title
+            font-size: 1em
+            font-weight: 700
+            z-index: 100
+        &-subtitle
+            margin-top: 10px
+            font-size: 0.8em
+        &:not(:nth-child(odd))
+            justify-content: end
+        div
+            max-width: 40%
+            
+
+            &::before
+                content: ""
+                position: absolute
+                top: 50%
+                left: 50%
+                width: 75px
+                height: 50px
+                z-index: 900
+                transform: translateX(-50%) translateY(-50%)
+    .one
+        div::before
+            background: url('../images/offer/5.png') no-repeat
+    .two
+        div::before
+            background: url('../images/offer/6.png') no-repeat
+    .three
+        div::before
+            background: url('../images/offer/7.png') no-repeat
+    .four
+        div::before
+            background: url('../images/offer/8.png') no-repeat
+
+    .one::before
+        content: ""
+        position: absolute
+        background: url("../images/offer/1.png") no-repeat center
+        background-size: 100% auto
+        width: 54%
+        height: 100%
+        right: 0
+        z-index: 1
+
+    .two::before
+        content: ""
+        position: absolute
+        background: url("../images/offer/2.png") no-repeat center right
+
+        width: 54%
+        height: 100%
+        left: 0
+        z-index: 1
+    .three::before
+        content: ""
+        position: absolute
+        background: url("../images/offer/3.png") no-repeat center left
+        width: 54%
+        height: 100%
+        right: 0
+        z-index: 1
+    .four::before
+        content: ""
+        position: absolute
+        background: url("../images/offer/4.png") no-repeat center right
+
+        width: 54%
+        height: 100%
+        left: 0
+        z-index: 1
